@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <svg width="574" height="64" viewBox="0 0 574 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M569 1H5C2.79086 1 1 2.79086 1 5V59C1 61.2091 2.79086 63 5 63H569C571.209 63 573 61.2091 573 59V5C573 2.79086 571.209 1 569 1Z" stroke="#183961" stroke-width="2"/>
-    </svg>
-</selector>

@@ -5,55 +5,48 @@
     android:layout_height="480px"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/source_sans_pro_semibold"
-        android:text="Назовите номер судозахода"
-        android:textAlignment="viewStart"
-        android:textColor="#41183961"
-        android:textSize="26px"
-        android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="774px"
-        android:layout_height="400px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/source_sans_pro_semibold"
-            android:text="Выберите судозаход"
-            android:textColor="#183961"
-            android:textSize="35px"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="774px"
+            android:layout_height="400px"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Выберите судозаход"
+                android:textColor="#183961"
+                android:textSize="35px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:paddingBottom="5px"
+                android:text="Назовите номер судозахода"
+                android:textAlignment="viewStart"
+                android:textColor="#41183961"
+                android:textSize="26px"
+                android:typeface="normal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="774px"
+                android:layout_height="300px"
+                android:background="#00FFFFFF"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_vessel">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="774px"
-        android:layout_height="300px"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77"
-        tools:itemCount="1"
-        tools:listitem="@layout/item_vessel">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
