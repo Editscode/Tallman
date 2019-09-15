@@ -240,7 +240,7 @@
             app:layout_constraintVertical_bias="0.385" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/input_length"
             android:layout_width="132px"
             android:layout_height="50px"
             android:background="@drawable/ic_rectangle"
