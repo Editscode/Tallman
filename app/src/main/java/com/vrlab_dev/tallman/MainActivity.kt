@@ -10,11 +10,11 @@ import kotlinx.android.synthetic.main.acrivity_ktk_notification.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.acrivity_ktk_notification)
 
-        //val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
-        //viewPage.adapter = fragmentAdapter
+        val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
+        viewPage.adapter = fragmentAdapter
 
-        //tabLayout.setupWithViewPager(viewPage)
+        tabLayout.setupWithViewPager(viewPage)
     }
 }
