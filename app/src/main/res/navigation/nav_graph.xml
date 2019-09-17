@@ -65,8 +65,11 @@
         android:label="fragment_confirmation_ktk"
         tools:layout="@layout/fragment_confirmation_ktk" >
         <action
-            android:id="@+id/action_confirmationKtkFragment_to_cameraFragment"
-            app:destination="@id/cameraFragment" />
+            android:id="@+id/action_confirmationKtkFragment_to_trueFragment"
+            app:destination="@id/trueFragment" />
+        <action
+            android:id="@+id/action_confirmationKtkFragment_to_falseFragment"
+            app:destination="@id/falseFragment" />
     </fragment>
     <fragment
         android:id="@+id/tractorFragment"
@@ -76,5 +79,23 @@
         <action
             android:id="@+id/action_tractorFragment_to_confirmationKtkFragment"
             app:destination="@id/confirmationKtkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trueFragment"
+        android:name="com.vrlab_dev.tallman.ui.confirmation.component.TrueFragment"
+        android:label="fragment_true"
+        tools:layout="@layout/fragment_true" >
+        <action
+            android:id="@+id/action_trueFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/falseFragment"
+        android:name="com.vrlab_dev.tallman.ui.confirmation.component.FalseFragment"
+        android:label="fragment_false"
+        tools:layout="@layout/fragment_false" >
+        <action
+            android:id="@+id/action_falseFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
     </fragment>
 </navigation>
