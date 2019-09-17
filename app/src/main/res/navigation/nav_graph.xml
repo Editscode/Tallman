@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notificationKtkFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.vrlab_dev.tallman.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.vrlab_dev.tallman.ui.second.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_vesselFragment"
+            app:destination="@id/vesselFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vesselFragment"
+        android:name="com.vrlab_dev.tallman.ui.vessel.VesselFragment"
+        android:label="fragment_vessel"
+        tools:layout="@layout/fragment_vessel" >
+        <action
+            android:id="@+id/action_vesselFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationKtkFragment"
+        android:name="com.vrlab_dev.tallman.ui.verificationKtk.VerificationKtkFragment"
+        android:label="fragment_verification_ktk"
+        tools:layout="@layout/fragment_verification_ktk" >
+        <action
+            android:id="@+id/action_verificationKtkFragment_to_notificationKtkFragment"
+            app:destination="@id/notificationKtkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.vrlab_dev.tallman.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_verificationKtkFragment"
+            app:destination="@id/verificationKtkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationKtkFragment"
+        android:name="com.vrlab_dev.tallman.ui.notificationKtk.NotificationKtkFragment"
+        android:label="fragment_notification_ktk"
+        tools:layout="@layout/fragment_notification_ktk" >
+        <action
+            android:id="@+id/action_notificationKtkFragment_to_tractorFragment"
+            app:destination="@id/tractorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationKtkFragment"
+        android:name="com.vrlab_dev.tallman.ui.confirmation.ConfirmationKtkFragment"
+        android:label="fragment_confirmation_ktk"
+        tools:layout="@layout/fragment_confirmation_ktk" >
+        <action
+            android:id="@+id/action_confirmationKtkFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tractorFragment"
+        android:name="com.vrlab_dev.tallman.ui.tractor.TractorFragment"
+        android:label="fragment_tractor"
+        tools:layout="@layout/fragment_tractor" >
+        <action
+            android:id="@+id/action_tractorFragment_to_confirmationKtkFragment"
+            app:destination="@id/confirmationKtkFragment" />
+    </fragment>
+</navigation>

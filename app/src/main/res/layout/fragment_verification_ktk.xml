@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.verificationKtk.VerificationKtkFragment">
+
+    <LinearLayout
+        android:layout_width="854px"
+        android:layout_height="480px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80px"
+            android:paddingStart="20px"
+            android:text="Contship Ace 049 050 "
+            android:textColor="#183961"
+            android:textSize="35px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50px"
+            android:text="Номер бэя"
+            android:textAlignment="center"
+            android:textColor="#183961"
+            android:textSize="26px"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="132px"
+                android:layout_height="50px"
+                android:background="@drawable/ic_rectangle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="#183961"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0/2"
+                android:textAlignment="viewStart"
+                android:textColor="#41183961"
+                android:textSize="35px"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40px"
+            android:text="Номер КТК"
+            android:textAlignment="center"
+            android:textColor="#183961"
+            android:textSize="26px"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="132px"
+                android:layout_height="50px"
+                android:background="@drawable/ic_rectangle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1234567"
+                android:textAlignment="center"
+                android:textColor="#183961"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0/7"
+                android:textAlignment="viewStart"
+                android:textColor="#41183961"
+                android:textSize="35px"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="200px"
+            android:layout_height="64px"
+            android:text="Далее"
+            android:textSize="10px" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

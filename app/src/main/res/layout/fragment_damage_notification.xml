@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="774px"
+    android:layout_height="354px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.notificationKtk.component.DamageNotificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="472px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="20px"
+                    android:layout_marginBottom="1dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="132px"
+                        android:layout_height="35px"
+                        android:layout_weight="1"
+                        android:text="Место"
+                        android:textAlignment="viewStart"
+                        android:textColor="#183961"
+                        android:textSize="26px"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.85"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.065" />
+
+                    <EditText
+                        android:id="@+id/editText8"
+                        android:layout_width="220px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_point"
+                        android:contentDescription="hf_use_description|Место"
+                        android:ems="10"
+                        android:inputType="none|number"
+                        android:paddingStart="10px"
+                        android:text="1"
+                        android:textAlignment="viewStart"
+                        android:textColor="#183961"
+                        android:textSize="30px"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.85"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.181" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35px"
+                        android:layout_weight="1"
+                        android:text="Повреждение"
+                        android:textAlignment="viewStart"
+                        android:textColor="#183961"
+                        android:textSize="26px"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.85"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.065" />
+
+                    <EditText
+                        android:id="@+id/editText9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_point"
+                        android:contentDescription="hf_use_description|Повреждение"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:paddingStart="10px"
+                        android:text="12"
+                        android:textAlignment="viewStart"
+                        android:textColor="#183961"
+                        android:textSize="30px"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.85"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.181" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:gravity="start"
+                android:text="Список повреждений"
+                android:textColor="#183961"
+                android:textSize="15px" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_recycler" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_length"
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/ic_rectangle"
+                android:contentDescription="hf_use_description|Длина"
+                android:ems="10"
+                android:hint="Длина (см)"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="#183961"
+                android:textSize="30px"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/input_width"
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/ic_rectangle"
+                android:contentDescription="hf_use_description|Ширина"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Ширина (см)"
+                android:textAlignment="center"
+                android:textColor="#183961"
+                android:textSize="30px"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.336" />
+
+            <EditText
+                android:id="@+id/input_depth"
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/ic_rectangle"
+                android:contentDescription="hf_use_description|Глубина"
+                android:ems="10"
+                android:hint="Глубина (см)"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="#183961"
+                android:textSize="30px"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.336" />
+
+            <LinearLayout
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button15"
+                    android:contentDescription="hf_use_description|Добавить"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_addbutton" />
+
+                <Button
+                    android:contentDescription="hf_use_description|Удалить"
+                    android:id="@+id/button16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_buttondel" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="854px"
+    android:layout_height="480px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.tractor.TractorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="774px"
+        android:layout_height="400px"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="490px"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите тягач "
+                android:textColor="#183961"
+                android:textSize="35px"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_recycler">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Номер тягача"
+                    android:textColor="#183961"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/input_length"
+                        android:layout_width="200px"
+                        android:layout_height="50px"
+                        android:background="@drawable/ic_rectangle"
+                        android:contentDescription="hf_use_description|Длина"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="#183961"
+                        android:textSize="30px"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.848"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5px"
+                        android:layout_weight="1"
+                        android:text="мин. 2 цифры "
+                        android:textAlignment="viewStart"
+                        android:textColor="#183961"
+                        android:textSize="20px" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/ic_buttonsave" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="774px"
+    android:layout_height="50px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingStart="20px">
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="47px"
+            android:layout_height="30px"
+            android:background="@drawable/ic_rectangle"
+            android:text="1"
+            android:textSize="18px" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20px"
+            android:text="Феско Невельск 1865 1867"
+            android:textColor="#183961"
+            android:textColorHighlight="#183961"
+            android:textSize="30px" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
